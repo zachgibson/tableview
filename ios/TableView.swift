@@ -11,8 +11,9 @@ import React
 @objc(TableView)
 class TableView: RCTViewManager {
   override func view() -> UIView! {
-    let viewController = TableViewController()
-    return viewController.view
+    let tableViewController = TableViewController(style: .plain)
+    tableViewController.tableView.reloadData()
+    return tableViewController.tableView
   }
   
   override class func requiresMainQueueSetup() -> Bool {

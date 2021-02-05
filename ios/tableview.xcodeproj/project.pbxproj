@@ -140,8 +140,8 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				B6914EA525CDC79F002F76DC /* tableview-Bridging-Header.h */,
-				B6914EB225CDCF25002F76DC /* TableView.swift */,
 				B6914EF725CDE611002F76DC /* TableViewManager.m */,
+				B6914EB225CDCF25002F76DC /* TableView.swift */,
 				B6914EC225CDD392002F76DC /* TableViewController.swift */,
 			);
 			name = tableview;

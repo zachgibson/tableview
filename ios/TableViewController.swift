@@ -8,36 +8,28 @@
 import Foundation
 import UIKit
 
-class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  let tableView: UITableView!
-  let data: [Int] = [0, 1, 2, 3, 4, 5]
-  
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return data.count
+class TableViewController: UITableViewController {
+  override init(style: UITableView.Style) {
+    super.init(style: style)
   }
   
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    cell.textLabel?.text = "Yeet"
-    return cell
-  }
-  
-  init() {
-      tableView = UITableView()
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    view.addSubview(tableView)
-    tableView.translatesAutoresizingMaskIntoConstraints = false
-    tableView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
-    tableView.leftAnchor.constraint(equalTo:view.leftAnchor).isActive = true
-    tableView.rightAnchor.constraint(equalTo:view.rightAnchor).isActive = true
-    tableView.bottomAnchor.constraint(equalTo:view.bottomAnchor).isActive = true
-    
-    tableView.delegate = self
-    tableView.dataSource = self
+
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+  }
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    cell.textLabel?.text = "Yeet"
+    return cell
+  }
+
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 10
   }
 }
-

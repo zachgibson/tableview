@@ -5,6 +5,8 @@ const TableView =
   global['TableView'] ||
   (global['TableView'] = requireNativeComponent('TableView'));
 
-const App: () => React$Node = () => <TableView style={{flex: 1}} />;
+const App: () => React$Node = () => (
+  <TableView style={{width: 375, height: 800}} />
+);
 
 export default App;
