@@ -20,7 +20,6 @@
 		6103FD27E529587607798A70 /* libPods-tableview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 772CA1EF4642135EF16D2BE4 /* libPods-tableview.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B6914EB325CDCF25002F76DC /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6914EB225CDCF25002F76DC /* TableView.swift */; };
-		B6914EC325CDD392002F76DC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6914EC225CDD392002F76DC /* TableViewController.swift */; };
 		B6914EF825CDE611002F76DC /* TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6914EF725CDE611002F76DC /* TableViewManager.m */; };
 		C6A8AA5E4B6E088E07361FB0 /* libPods-tableview-tableviewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AC83B3B5834B1D11720FD7 /* libPods-tableview-tableviewTests.a */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		97DF8D9982E5BDCFCC4451AF /* Pods-tableview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableview.debug.xcconfig"; path = "Target Support Files/Pods-tableview/Pods-tableview.debug.xcconfig"; sourceTree = "<group>"; };
 		B6914EA525CDC79F002F76DC /* tableview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tableview-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6914EB225CDCF25002F76DC /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		B6914EC225CDD392002F76DC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B6914EF725CDE611002F76DC /* TableViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewManager.m; sourceTree = "<group>"; };
 		B8CF9678CA9DD35E953AF6B3 /* Pods-tableview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableview.release.xcconfig"; path = "Target Support Files/Pods-tableview/Pods-tableview.release.xcconfig"; sourceTree = "<group>"; };
 		C0D7430CBAFA4C7A66296674 /* Pods-tableview-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableview-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-tableview-tvOSTests/Pods-tableview-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				B6914EA525CDC79F002F76DC /* tableview-Bridging-Header.h */,
 				B6914EF725CDE611002F76DC /* TableViewManager.m */,
 				B6914EB225CDCF25002F76DC /* TableView.swift */,
-				B6914EC225CDD392002F76DC /* TableViewController.swift */,
 			);
 			name = tableview;
 			sourceTree = "<group>";
@@ -581,7 +578,6 @@
 			files = (
 				B6914EB325CDCF25002F76DC /* TableView.swift in Sources */,
 				B6914EF825CDE611002F76DC /* TableViewManager.m in Sources */,
-				B6914EC325CDD392002F76DC /* TableViewController.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
